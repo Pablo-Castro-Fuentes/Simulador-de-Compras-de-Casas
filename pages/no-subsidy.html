@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Simula un crédito hipotecario para comprar una vivienda sin subsidio">
+    <title>Compra sin Subsidio - Simulador</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/css/no-subsidy.css">
+</head>
+<body>
+    <header>
+        <h1>Compra sin Subsidio</h1>
+        <p>Ingresa los datos para simular tu crédito hipotecario</p>
+    </header>
+    <main>
+        <section class="form-container">
+            <form id="simulacion-form">
+                <div class="form-group">
+                    <label for="property-value-clp">Valor de la vivienda (CLP):</label>
+                    <input type="number" id="property-value-clp" min="0" step="1000" onchange="convertToUF()">
+                </div>
+                <div class="form-group">
+                    <label for="property-value">Valor de la vivienda (UF):</label>
+                    <input type="number" id="property-value" min="1" required step="0.01">
+                </div>
+                <div class="form-group">
+                    <label for="down-payment">Pie:</label>
+                    <select id="down-payment-type" onchange="adjustDownPaymentOptions()">
+                        <option value="percentage">Porcentaje</option>
+                        <option value="uf">UF</option>
+                    </select>
+                    <input type="number" id="down-payment" min="10" max="50" step="0.01" required>
+                </div>
+                <div class="form-group">
+                    <label for="is-young-single">¿Eres joven soltero (menor de 35 años)?</label>
+                    <input type="checkbox" id="is-young-single">
+                </div>
+                <div class="form-group">
+                    <label for="uf-value">Valor actual de la UF (CLP):</label>
+                    <input type="number" id="uf-value" step="0.01" readonly>
+                </div>
+                <div class="form-group">
+                    <label for="interest-rate">Tasa de interés anual (%):</label>
+                    <input type="number" id="interest-rate" value="5.1" step="0.01" required>
+                </div>
+                <div class="form-group">
+                    <label for="loan-term">Plazo del crédito (años):</label>
+                    <select id="loan-term" required>
+                        <option value="10">10 años</option>
+                        <option value="15">15 años</option>
+                        <option value="20">20 años</option>
+                        <option value="25" selected>25 años</option>
+                        <option value="30">30 años</option>
+                    </select>
+                </div>
+                <button type="submit">Calcular</button>
+            </form>
+        </section>
+        <section id="results" class="results-container"></section>
+    </main>
+    <footer>
+        <button onclick="window.location.href='../index.html'">Volver al inicio</button>
+        <p>© 2025 Simulador de Subsidios para Vivienda</p>
+    </footer>
+    <script src="../assets/js/no-subsidy.js"></script>
+</body>
+</html>

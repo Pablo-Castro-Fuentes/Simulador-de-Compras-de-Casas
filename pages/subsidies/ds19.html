@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Calcula el dividendo y renta mínima para el Subsidio DS19">
+    <title>Subsidio DS19 - Simulador Directo</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../assets/css/subsidies-alt.css">
+</head>
+<body>
+    <header>
+        <h1>Subsidio DS19</h1>
+        <p>Ingresa los datos del crédito hipotecario para calcular el dividendo</p>
+    </header>
+    <main>
+        <section class="form-container">
+            <form id="ds19-form">
+                <div class="form-group">
+                    <label for="loan-amount">Monto del crédito hipotecario (UF):</label>
+                    <input type="number" id="loan-amount" min="1" step="0.01" required>
+                </div>
+                <div class="form-group">
+                    <label for="is-young-single">¿Eres joven soltero (menor de 35 años)?</label>
+                    <input type="checkbox" id="is-young-single">
+                </div>
+                <div class="form-group">
+                    <label for="interest-rate">Tasa de interés anual (%):</label>
+                    <input type="number" id="interest-rate" value="5.1" step="0.01" required>
+                </div>
+                <div class="form-group">
+                    <label for="loan-term">Plazo del crédito (años):</label>
+                    <select id="loan-term" required>
+                        <option value="10">10 años</option>
+                        <option value="15">15 años</option>
+                        <option value="20">20 años</option>
+                        <option value="25" selected>25 años</option>
+                        <option value="30">30 años</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="uf-value">Valor actual de la UF (CLP):</label>
+                    <input type="number" id="uf-value" step="0.01" readonly>
+                </div>
+                <button type="submit">Calcular dividendo y renta mínima</button>
+            </form>
+        </section>
+        <section id="results" class="results-container"></section>
+    </main>
+    <footer>
+        <button onclick="window.location.href='../subsidies.html'">Volver</button>
+        <p>© 2025 Simulador de Subsidios para Vivienda</p>
+    </footer>
+    <script src="../../assets/js/subsidies/ds19.js"></script>
+</body>
+</html>
