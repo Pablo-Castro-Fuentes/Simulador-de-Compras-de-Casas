@@ -65,15 +65,15 @@ document.getElementById('ds1t3-form').addEventListener('submit', async (event) =
     if (location === 'north') {
         initialSubsidyUF = 950;
         maxPropertyValue = savingsUf >= 160 && isNewHome ? 3000 : 2600;
-        subsidyUF = calculateSubsidy(maxLoanAmountUF + savingsUf + 950, 500, 350, 1200, 1600);
+        subsidyUF = calculateSubsidy(maxLoanAmountUF + savingsUf + 950, 650, 350, 800, 1600);
     } else if (location === 'south') {
         initialSubsidyUF = 1000;
         maxPropertyValue = savingsUf >= 160 && isNewHome ? 3000 : 2600;
-        subsidyUF = calculateSubsidy(maxLoanAmountUF + savingsUf + 1000, 550, 400, 1200, 1600);
+        subsidyUF = calculateSubsidy(maxLoanAmountUF + savingsUf + 1000, 700, 400, 800, 1600);
     } else {
         initialSubsidyUF = 850;
         maxPropertyValue = savingsUf >= 160 && isNewHome ? 3000 : 2200;
-        subsidyUF = calculateSubsidy(maxLoanAmountUF + savingsUf + 850, 400, 250, 1200, 1600);
+        subsidyUF = calculateSubsidy(maxLoanAmountUF + savingsUf + 850, 400, 250, 800, 1600);
     }
 
     // Ajustar por vivienda nueva y ahorro >= 160 UF

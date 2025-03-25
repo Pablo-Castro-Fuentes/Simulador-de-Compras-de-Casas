@@ -85,15 +85,15 @@ document.getElementById('max-value-form').addEventListener('submit', async (even
     if (location === 'north') {
         initialSubsidyUF = 950;
         maxPropertyValue = (isNewHome && savingsUf >= 160) ? 3000 : 2600;
-        subsidyUF = calculateSubsidy(loanAmount + savingsUf + 950, 650, 350, 1000, 2200);
+        subsidyUF = calculateSubsidy(loanAmount + savingsUf + 950, 500, 350, 1200, 1600);
     } else if (location === 'south') {
         initialSubsidyUF = 1000;
         maxPropertyValue = (isNewHome && savingsUf >= 160) ? 3000 : 2600;
-        subsidyUF = calculateSubsidy(loanAmount + savingsUf + 1000, 700, 400, 1000, 2200);
+        subsidyUF = calculateSubsidy(loanAmount + savingsUf + 1000, 550, 400, 1200, 1600);
     } else {
         initialSubsidyUF = 850;
         maxPropertyValue = (isNewHome && savingsUf >= 160) ? 3000 : 2200;
-        subsidyUF = calculateSubsidy(loanAmount + savingsUf + 850, 550, 250, 1000, 2200);
+        subsidyUF = calculateSubsidy(loanAmount + savingsUf + 850, 400, 250, 1200, 1600);
     }
 
     // Ajustar por vivienda nueva y ahorro >= 160 UF
@@ -102,7 +102,7 @@ document.getElementById('max-value-form').addEventListener('submit', async (even
 
     // Calcular valor máximo de la propiedad
     let maxPropertyValuePossible = loanAmount + savingsUf + totalSubsidyUF;
-    if (maxPropertyValuePossible < 600) {
+    if (maxPropertyValuePossible < 800) {
         resultsDiv.innerHTML = `<p style="color: #d9534f;">No calificas para este subsidio (valor mínimo: 600 UF).</p>`;
         return;
     }
