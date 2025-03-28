@@ -1,0 +1,166 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f9f7f2;
+    color: #4a4a4a;
+    padding: 20px;
+    margin: 0;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+header h1 {
+    font-size: 2.2em;
+    color: #6b9ac4;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.form-container {
+    max-width: 500px;
+    margin: 0 auto 40px;
+}
+
+#subsidy-form {
+    background-color: #ffffff;
+    border-radius: 15px;
+    padding: 25px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    border: 2px solid #e0e7e9;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    font-size: 1.1em;
+    color: #4a4a4a;
+    margin-bottom: 5px;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #d1d8db;
+    border-radius: 8px;
+    font-size: 1em;
+    background-color: #f9fbfc;
+    transition: border-color 0.3s ease;
+}
+
+.form-group input:focus {
+    outline: none;
+    border-color: #6b9ac4;
+    box-shadow: 0 0 5px rgba(107, 154, 196, 0.3);
+}
+
+#subsidy-form button {
+    width: 100%;
+    padding: 12px;
+    background-color: #87c0a3;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#subsidy-form button:hover { background-color: #6b9ac4; }
+
+.results-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.results-container p {
+    font-size: 1.2em;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.subsidy-options {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 25px;
+}
+
+.subsidy-card {
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    transition: all 0.3s ease;
+    border: 2px solid #e0e7e9;
+}
+
+.subsidy-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+    border-color: #87c0a3;
+}
+
+.subsidy-card a { text-decoration: none; color: #4a4a4a; display: block; }
+.subsidy-card h2 { font-size: 1.3em; margin-bottom: 10px; color: #6b9ac4; }
+.subsidy-card p { font-size: 0.95em; color: #666; }
+
+footer button {
+    padding: 10px 20px;
+    background-color: #4a4a4a;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+footer button:hover { background-color: #6b9ac4; }
+
+@media (max-width: 600px) {
+    header h1 { font-size: 1.8em; }
+    .form-group input { font-size: 0.95em; }
+}
+
+.form-group select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #d1d8db;
+    border-radius: 8px;
+    font-size: 1em;
+    background-color: #f9fbfc;
+    color: #333;
+    transition: border-color 0.3s ease;
+}
+
+.form-group select:focus {
+    outline: none;
+    border-color: #6b9ac4;
+    box-shadow: 0 0 5px rgba(107, 154, 196, 0.3);
+}
+
+.form-group p#income-display {
+    font-size: 1em;
+    color: #666;
+    margin-top: 5px;
+}
+
+form button {
+    width: 100%;
+    padding: 12px;
+    background-color: #23bd51; /* Verde claro */
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #0c6b00; /* Verde más intenso */
+}

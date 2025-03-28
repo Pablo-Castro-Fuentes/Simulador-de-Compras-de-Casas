@@ -1,0 +1,50 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Simulador de subsidios y créditos hipotecarios para vivienda en Chile">
+    <title>Simulador de Subsidios para Vivienda</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'css/main.css' %}">
+</head>
+<body>
+    <header>
+        <h1>Simulador de Subsidios para Vivienda</h1>
+        <p>¡Bienvenido! Selecciona una opción para comenzar a simular tu camino hacia una vivienda propia.</p>
+    </header>
+    <main>
+        <div class="subsidy-options">
+            <article class="subsidy-card">
+                <a href="pages/percentile.html">
+                    <h2>Simulador de Percentiles</h2>
+                    <p>Calcula tu percentil de ingreso y descubre a qué subsidios puedes optar.</p>
+                </a>
+            </article>
+            <article class="subsidy-card">
+                <a href="pages/subsidies.html">
+                    <h2>Simulador de Subsidios</h2>
+                    <p>Simula el crédito hipotecario con diferentes subsidios habitacionales.</p>
+                </a>
+            </article>
+            <article class="subsidy-card">
+                <a href="pages/no-subsidy.html">
+                    <h2>Compra sin Subsidio</h2>
+                    <p>Simula un crédito hipotecario sin aplicar subsidios.</p>
+                </a>
+            </article>
+            <article class="subsidy-card">
+                <a href="pages/max-value.html">
+                    <h2>Valor Máximo de Casa</h2>
+                    <p>Calcula el valor máximo de una vivienda según tu sueldo.</p>
+                </a>
+            </article>
+        </div>
+        <h5 style="text-align: center; display: block;">Aviso: La tasa de crédito anual está por defecto en un 5.1%, pero puede cambiarlo a una tasa mas actual según su banco. Favor de tenerlo en consideración para una simulación mas adecuada a su situación económica.</a>
+    </main>
+    <footer>
+        <p>© 2025 Simulador de Subsidios para Vivienda</p>
+    </footer>
+</body>
+</html>
