@@ -1,0 +1,134 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #e0f7fa; /* Fondo cyan claro */
+    color: #00695c; /* Cyan oscuro */
+    padding: 20px;
+    margin: 0;
+}
+
+header {
+    background: linear-gradient(135deg, #4dd0e1, #00695c); /* Gradiente cyan */
+    padding: 30px 20px;
+    text-align: center;
+    border-bottom: 4px solid #ffffff;
+    margin-bottom: 30px;
+}
+
+header h1 {
+    font-size: 2.2em;
+    color: #ffffff;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+header p {
+    font-size: 1.1em;
+    color: #e0f7fa;
+}
+
+.question-container {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    border-radius: 15px;
+    padding: 25px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    border: 2px solid #b2ebf2;
+    text-align: center;
+}
+
+.question-container h2 {
+    font-size: 1.5em;
+    color: #00695c;
+    margin-bottom: 20px;
+}
+
+.options {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.options button {
+    padding: 10px 20px;
+    background-color: #4dd0e1;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.options button:hover {
+    background-color: #00695c;
+}
+
+.result-container {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    border-radius: 15px;
+    padding: 25px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    border: 2px solid #b2ebf2;
+    text-align: center;
+}
+
+.result-container h2 {
+    font-size: 1.5em;
+    color: #00695c;
+    margin-bottom: 20px;
+}
+
+.result-container p {
+    font-size: 1.1em;
+    color: #00695c;
+    margin-bottom: 20px;
+}
+
+#restart {
+    padding: 10px 20px;
+    background-color: #4dd0e1;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#restart:hover {
+    background-color: #00695c;
+}
+
+footer {
+    text-align: center;
+    margin-top: 40px;
+}
+
+footer button {
+    padding: 10px 20px;
+    background-color: #00695c;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+footer button:hover {
+    background-color: #4dd0e1;
+}
+
+footer p {
+    font-size: 0.9em;
+    color: #00695c;
+    margin-top: 10px;
+}
+
+@media (max-width: 600px) {
+    header h1 { font-size: 1.8em; }
+    .question-container h2 { font-size: 1.3em; }
+    .options { flex-direction: column; gap: 10px; }
+}
