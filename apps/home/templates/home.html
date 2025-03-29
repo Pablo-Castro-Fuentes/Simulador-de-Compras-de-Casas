@@ -1,19 +1,9 @@
+{% extends 'index.html' %}
+
 {% load static %}
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Simulador de subsidios y créditos hipotecarios para vivienda en Chile">
-    <title>Simulador de Subsidios para Vivienda</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="{% static 'css/main.css' %}">
-</head>
-<body>
-    <header>
-        <h1>Simulador de Subsidios para Vivienda</h1>
-        <p>¡Bienvenido! Selecciona una opción para comenzar a simular tu camino hacia una vivienda propia.</p>
-    </header>
+
+{% block content %}
+    
     <main>
         <div class="subsidy-options">
             <article class="subsidy-card">
@@ -43,8 +33,4 @@
         </div>
         <h5 style="text-align: center; display: block;">Aviso: La tasa de crédito anual está por defecto en un 5.1%, pero puede cambiarlo a una tasa mas actual según su banco. Favor de tenerlo en consideración para una simulación mas adecuada a su situación económica.</a>
     </main>
-    <footer>
-        <p>© 2025 Simulador de Subsidios para Vivienda</p>
-    </footer>
-</body>
-</html>
+{% endblock %}

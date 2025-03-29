@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Calcula subsidios según tu sueldo y situación familiar">
+    <title>Subsidios según tu sueldo - Simulador</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/css/subsidies.css">
+</head>
+<body>
+    <header>
+        <h1>Subsidios según tu sueldo</h1>
+    </header>
+    <main>
+        <section class="form-container">
+            <form id="subsidy-form">
+                <div class="form-group">
+                    <label for="total-income">Sueldo mensual total (CLP):</label>
+                    <input type="number" id="total-income" min="0" required>
+                </div>
+                <div class="form-group">
+                    <label for="household-size">Número de personas en el hogar:</label>
+                    <input type="number" id="household-size" min="1" required>
+                </div>
+                <div class="form-group">
+                    <label for="rent">Arriendo mensual (CLP):</label>
+                    <input type="number" id="rent" min="0" required>
+                </div>
+                <button type="submit">Calcular</button>
+            </form>
+        </section>
+        <section id="results" class="results-container"></section>
+    </main>
+    <footer>
+        <button onclick="window.location.href='../index.html'">Volver al inicio</button>
+    </footer>
+    <script src="../assets/js/subsidies.js"></script>
+</body>
+</html>

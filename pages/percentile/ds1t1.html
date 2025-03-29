@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Calcula el subsidio DS1 Tramo 1 para vivienda">
+    <title>Subsidio DS1 Tramo 1 - Simulador</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../assets/css/subsidies.css">
+</head>
+<body>
+    <header>
+        <h1>Subsidio DS1 Tramo 1</h1>
+        <p>Ingresa tu ahorro y configura tu crédito para calcular el subsidio</p>
+    </header>
+    <main>
+        <section class="form-container">
+            <form id="ds1t1-form">
+                <div class="form-group">
+                    <label>Sueldo mensual total (CLP):</label>
+                    <p id="income-display">Cargando desde tu perfil...</p>
+                </div>
+                <div class="form-group">
+                    <label for="savings-uf">Ahorro en UF (mínimo 30 UF):</label>
+                    <input type="number" id="savings-uf" min="30" step="1" required>
+                </div>
+                <div class="form-group">
+                    <label for="location">Ubicación:</label>
+                    <select id="location" required>
+                        <option value="none">Zona Regular</option>
+                        <option value="north">Extremo Norte</option>
+                        <option value="south">Extremo Sur</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="loan-term">Plazo del crédito (años):</label>
+                    <select id="loan-term" required>
+                        <option value="10">10 años</option>
+                        <option value="15">15 años</option>
+                        <option value="20">20 años</option>
+                        <option value="25" selected>25 años</option>
+                        <option value="30">30 años</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="interest-rate">Tasa de interés anual (%):</label>
+                    <input type="number" id="interest-rate" value="5.1" step="0.01" required>
+                </div>
+                <div class="form-group">
+                    <label for="uf-value">Valor actual de la UF (CLP):</label>
+                    <input type="number" id="uf-value" step="0.01" readonly>
+                </div>
+                <button type="submit">Calcular</button>
+            </form>
+        </section>
+        <section id="results" class="results-container"></section>
+    </main>
+    <footer>
+        <button onclick="window.location.href='../percentile.html'">Volver</button>
+    </footer>
+    <script src="../../assets/js/percentile/ds1t1.js"></script>
+</body>
+</html>

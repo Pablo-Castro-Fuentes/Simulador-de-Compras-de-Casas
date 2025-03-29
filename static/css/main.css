@@ -5,15 +5,7 @@ body {
     margin: 0;
 }
 
-header {
-    background: linear-gradient(135deg, #6b9ac4, #87c0a3);
-    padding: 40px 20px;
-    text-align: center;
-    border-bottom: 4px solid #ffffff;
-}
 
-header h1 { font-size: 2.5em; color: white; text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2); }
-header p { font-size: 1.1em; color: #f0f4f8; margin-top: 10px; }
 
 .subsidy-options {
     display: grid;
@@ -44,13 +36,7 @@ header p { font-size: 1.1em; color: #f0f4f8; margin-top: 10px; }
 .subsidy-card h2 { font-size: 1.3em; margin-bottom: 10px; color: #6b9ac4; }
 .subsidy-card p { font-size: 0.95em; color: #666; }
 
-footer {
-    background-color: #4a4a4a;
-    color: #ffffff;
-    text-align: center;
-    padding: 15px;
-    margin-top: 40px;
-}
+
 
 @media (max-width: 600px) {
     header h1 { font-size: 1.8em; }
